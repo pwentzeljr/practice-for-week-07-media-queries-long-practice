@@ -19,3 +19,27 @@ a.backButton {
 }
 
 /* Your code here */
+@media print {
+    img{
+        width: 100%;
+    }
+
+    .notPrinted {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        position: relative;
+        top: 60px;
+    }
+
+    p {
+        position: relative;
+        bottom: 40px;
+    }
+
+}

@@ -24,3 +24,44 @@
 }
 
 /* Your code here */
+
+
+@media (width >= 900px) {
+    .photo-card .content {
+        display: block;
+        text-align: center;
+    }
+
+    .photo-card img {
+        object-fit: cover;
+        padding-right: 0;
+    }
+
+    .photo-card {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0 1% 10px;
+        width: 47%;
+        vertical-align: top;
+    }
+
+}
+
+@media print, (600px <= width < 900px ), (width > 1200px)  {
+    .photo-card .content {
+        display: flex;
+    }
+
+    .photo-card img {
+        padding-right: 14px;
+        object-fit: scale-down;
+    }
+
+    div {
+        break-inside: avoid;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+}

@@ -24,6 +24,14 @@ header.homepage {
     height: 440px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 nav {
     background-color: #000021;
     font-family: "Roboto", sans-serif;
@@ -53,3 +61,26 @@ nav a.selected {
 }
 
 /* Your code here */
+
+@media print {
+    nav {
+        display: none;
+    }
+
+    header.homepage {
+        height: 80px;
+    }
+
+}
+
+@media (max-height: 640px) {
+    header.homepage {
+        height: 220px;
+    }
+}
+
+@media (hover: none) {
+    a {
+        text-decoration: underline;
+    }
+}

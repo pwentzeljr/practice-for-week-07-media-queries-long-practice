@@ -85,3 +85,12 @@
 }
 
 /* Your code here */
+@media print {
+    .timeline, .timeline-labels {
+        min-width: none;
+   }
+
+   .timeline-scroll-area {
+        overflow-x: visible;
+   }
+}
